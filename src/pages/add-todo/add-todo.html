@@ -1,0 +1,24 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Adicionar Tarefa</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <form [formGroup]="newTodoForm" (ngSubmit)="newTodo()">
+    <ion-item>
+      <ion-label>Tarefa</ion-label>
+      <ion-input formControlName="todo" type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Descrição</ion-label>
+      <ion-input formControlName="description" type="text"></ion-input>
+    </ion-item>
+    <button ion-button>Adicionar</button>
+  </form>
+
+</ion-content>
